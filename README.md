@@ -9,7 +9,9 @@ Read more about [JupyterHub on Kubernetes].
 
 ## Local Workstation / GPU Station
 
-DataLab is a feature-packed Data Science, Machine Learning and IoT IDE  in-cluster or on local workstations. **DataLab contains [kubefwd], allowing developers and data scientists to work locally with APIs and data sources exposed through Kubernetes services and port-forwarded directly into the [JupyterLab] environment.** 
+DataLab is a feature-packed Data Science, Machine Learning and IoT IDE  for use in-cluster, or on local workstations. **DataLab contains [kubefwd], allowing developers and data scientists to work locally with APIs and data sources exposed through Kubernetes services and port-forwarded directly into the [JupyterLab] environment.** 
+
+**NOTE:** [kubefwd] is included for operating this JpuyterLab container on a local workstation.
 
 ```bash 
 docker run --rm --name datalab -p 8888:8888 \
@@ -61,8 +63,9 @@ Python Libs:
 ## Build
 
 ```bash 
-
+docker build -t txn2/datalab:v0.0.1 .
 ```
+
 [kubefwd]: https://github.com/txn2/kubefwd
 [kubectl]: https://kubernetes.io/docs/reference/kubectl/overview/
 [Jupyter Notebook]: https://jupyter.org/
