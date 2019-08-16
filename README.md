@@ -3,7 +3,7 @@ Custom [JupyterLab] container for local-workstations and in-cluster Kubernetes D
 
 DataLab is a large [Jupyter Notebook] container assembled for use as a central IDE within a data platform. [JupyterHub] provisions DataLab and uses a Kubernetes Service Account with a well defined RBAC configuration. 
 
-![kernels](./kernels.png)
+![kernels](https://github.com/txn2/datalab/blob/master/kernels.png?raw=true)
 
 Read more about [JupyterHub on Kubernetes].
 
@@ -23,9 +23,9 @@ docker run --rm --name datalab -p 8888:8888 \
   txn2/datalab:v0.0.1
 ```
 
-![Datalab local workstation with kubefwd](./datalab-local-kubefwd.png)
+![Datalab local workstation with kubefwd](https://github.com/txn2/datalab/blob/master/datalab-local-kubefwd.png?raw=true)
 
-![Datalab Prometheus demo](./datalab-local-kubefwd-prom.png)
+![Datalab Prometheus demo](https://github.com/txn2/datalab/blob/master/datalab-local-kubefwd-prom.png?raw=true)
 
 
 ## Packages
