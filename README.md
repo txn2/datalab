@@ -1,5 +1,5 @@
 # DataLab
-Custom [JupyterLab] container for the txn2, apk8s and RevolveNet platforms.
+Custom [JupyterLab] container for local-workstations and in-cluster Kubernetes Data Science, Machine Learning and IoT.
 
 DataLab is a large [Jupyter Notebook] container assembled for use as a central IDE within a data platform. [JupyterHub] provisions DataLab and uses a Kubernetes Service Account with a well defined RBAC configuration. 
 
