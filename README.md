@@ -7,7 +7,9 @@ DataLab is a large [Jupyter Notebook] container assembled for use as a central I
 
 Read more about [JupyterHub on Kubernetes].
 
-DataLab is a feature-packed Data Science, Machine Learning and IoT IDE  in-cluster or on local workstations. DataLab contains [kubefwd], allowing developers and data scientists to work with APIs and data sources exposed through Kubernetes services and port-forwarded directly into the [JupyterLab] environment.  
+## Local Workstation / GPU Station
+
+DataLab is a feature-packed Data Science, Machine Learning and IoT IDE  in-cluster or on local workstations. **DataLab contains [kubefwd], allowing developers and data scientists to work locally with APIs and data sources exposed through Kubernetes services and port-forwarded directly into the [JupyterLab] environment.** 
 
 ```bash 
 docker run --rm --name datalab -p 8888:8888 \
