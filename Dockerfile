@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:7a3e968dd212
+FROM jupyter/datascience-notebook:66c99628f4b8
 
 USER root
 
@@ -16,13 +16,13 @@ RUN apt update \
 
 # kubefwd for local development and testing
 RUN apt-get clean && apt-get autoremove --purge
-RUN wget https://github.com/txn2/kubefwd/releases/download/v1.8.4/kubefwd_amd64.deb \
+RUN wget https://github.com/txn2/kubefwd/releases/download/v1.9.0/kubefwd_amd64.deb \
     && dpkg -i kubefwd_amd64.deb \
     && rm kubefwd_amd64.deb
 
 USER $NB_UID
 
-# Installs data science and machine learning python packages
+# Installs data science, machine learning, blockchaine and iot python packages
 RUN pip install --no-cache \
     rubix \
     python-gitlab \
