@@ -11,7 +11,7 @@ RUN echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" \
     | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 
 RUN apt update \
-    && apt install -y kubectl git gcc mono-mcs musl-dev octave \
+    && apt install -y kubectl git gcc mono-mcs musl-dev octave vim figlet \
     && rm -rf /var/lib/apt/lists/*
 
 # kubefwd for local development and testing
