@@ -49,3 +49,8 @@ RUN jupyter serverextension enable --py jupyterlab_git
 
 RUN mkdir -p ./.jupyter/lab/user-settings/@jupyterlab/apputils-extension
 COPY ./user-settings/themes.jupyterlab-settings ./.jupyter/lab/user-settings/@jupyterlab/apputils-extension
+
+COPY ./bash/bash_profile ./.bash_profile
+
+ENV DATALAB_DIST "DataLab"
+ENV DATALAB_VERSION "v0.0.5"

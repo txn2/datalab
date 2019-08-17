@@ -23,7 +23,7 @@ docker run --rm --name datalab -p 8888:8888 \
   --user root \
   -e GRANT_SUDO=yes \
   -e JUPYTER_ENABLE_LAB=yes -e RESTARTABLE=yes \
-  txn2/datalab:v0.0.4
+  txn2/datalab:v0.0.5
 ```
 
 ![Datalab local workstation with kubefwd](https://github.com/txn2/datalab/blob/master/datalab-local-kubefwd.png?raw=true)
@@ -66,7 +66,7 @@ Python Libs:
 ## Build
 
 ```bash 
-docker build -t txn2/datalab:v0.0.4 .
+docker build -t txn2/datalab:v0.0.5 .
 ```
 
 [kubefwd]: https://github.com/txn2/kubefwd
