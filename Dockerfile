@@ -24,6 +24,7 @@ USER $NB_UID
 
 # Installs data science, machine learning, blockchaine and iot python packages
 RUN pip install --no-cache \
+    nbgitpuller \
     rubix \
     python-gitlab \
     scipy \
