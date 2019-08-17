@@ -66,7 +66,7 @@ Python Libs:
 ## Build
 
 ```bash 
-docker build -t txn2/datalab:v0.0.2 .
+docker build -t txn2/datalab:v0.0.3 .
 ```
 
 [kubefwd]: https://github.com/txn2/kubefwd
