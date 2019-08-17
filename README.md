@@ -1,4 +1,7 @@
 # DataLab
+[![Docker Container Image Size](https://shields.beevelop.com/docker/image/image-size/txn2/datalab/latest.svg)](https://hub.docker.com/r/txn2/datalab/tags)
+[![Docker Container Layers](https://shields.beevelop.com/docker/image/layers/txn2/datalab/latest.svg)](https://hub.docker.com/r/txn2/datalab/tags)
+
 Custom [JupyterLab] container for local-workstations and in-cluster Kubernetes Data Science, Machine Learning and IoT.
 
 DataLab is a large [Jupyter Notebook] container assembled for use as a central IDE within a data platform. [JupyterHub] provisions DataLab and uses a Kubernetes Service Account with a well defined RBAC configuration. 
@@ -20,7 +23,7 @@ docker run --rm --name datalab -p 8888:8888 \
   --user root \
   -e GRANT_SUDO=yes \
   -e JUPYTER_ENABLE_LAB=yes -e RESTARTABLE=yes \
-  txn2/datalab:v0.0.1
+  txn2/datalab:v0.0.2
 ```
 
 ![Datalab local workstation with kubefwd](https://github.com/txn2/datalab/blob/master/datalab-local-kubefwd.png?raw=true)
@@ -63,7 +66,7 @@ Python Libs:
 ## Build
 
 ```bash 
-docker build -t txn2/datalab:v0.0.1 .
+docker build -t txn2/datalab:v0.0.2 .
 ```
 
 [kubefwd]: https://github.com/txn2/kubefwd
