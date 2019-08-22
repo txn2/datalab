@@ -23,7 +23,7 @@ docker run --rm --name datalab -p 8888:8888 \
   --user root \
   -e GRANT_SUDO=yes \
   -e JUPYTER_ENABLE_LAB=yes -e RESTARTABLE=yes \
-  txn2/datalab:v0.0.5
+  txn2/datalab:v0.0.6
 ```
 
 ![Datalab local workstation with kubefwd](https://github.com/txn2/datalab/blob/master/datalab-local-kubefwd.png?raw=true)
@@ -37,6 +37,7 @@ Datalab contains the following utilities:
 - [git](https://git-scm.com/)
 - [kubectl]
 - [kubefwd] (for local workstations)
+- [nuctl] [nuclio] command line (Serverless)
 
 Kernels:
 - [Python 3](https://www.python.org/)
@@ -45,6 +46,13 @@ Kernels:
 - [R 3.6.1](https://www.r-project.org/)
 
 Python Libs:
+- [nuclio-jupyter](https://github.com/nuclio/nuclio-jupyter)
+- [pylantern](https://github.com/timkpaine/lantern)
+- [ipywidgets](https://ipywidgets.readthedocs.io/en/latest/)
+- [seaborn](https://seaborn.pydata.org/)
+- [kubernetes](https://github.com/kubernetes-client/python)
+- [kafka-python](https://github.com/dpkp/kafka-python)
+- [elasticsearch](https://elasticsearch-py.readthedocs.io/en/master/)
 - [rubix](http://docs.nurtch.com/en/latest/rubix-library)
 - [python-gitlab](https://python-gitlab.readthedocs.io/en/stable/)
 - [jupyterlab-git](https://github.com/jupyterlab/jupyterlab-git)
@@ -66,7 +74,8 @@ Python Libs:
 ## Build
 
 ```bash 
-docker build -t txn2/datalab:v0.0.5 .
+docker build -t txn2/datalab:v0.0.6
+ .
 ```
 
 [kubefwd]: https://github.com/txn2/kubefwd
@@ -75,3 +84,5 @@ docker build -t txn2/datalab:v0.0.5 .
 [JupyterHub]: https://jupyterhub.readthedocs.io/en/stable/
 [JupyterHub on Kubernetes]: https://zero-to-jupyterhub.readthedocs.io/
 [JupyterLab]: https://jupyterlab.readthedocs.io/en/stable/
+[nuctl]: https://github.com/nuclio/nuclio/blob/master/docs/reference/nuctl/nuctl.md
+[nuclio]: https://github.com/nuclio/nuclio
